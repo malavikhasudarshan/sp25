@@ -6,6 +6,7 @@ permalink: /
 seo:
   type: Course
   name: Berkeley Class Site
+currWeekNumber: 1
 ---
 
 

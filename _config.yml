@@ -34,8 +34,8 @@ url: 'https://ds100.org' # the hostname & protocol for your site, e.g. http://ex
 # TODO(setup): Set all of these course variables
 course: Data 100
 course_email: data100.instructors@berkeley.edu
-gradescope_course_id: 123456 # you can find this in the Gradescope URL after /courses
-bcourses_course_id: 123456 # Same as above, but for bCourses. Leave blank if not in use...
+gradescope_course_id: 949942 # you can find this in the Gradescope URL after /courses
+bcourses_course_id: 1541798 # Same as above, but for bCourses. Leave blank if not in use...
 ed_course_id: 123456 # Again, same as above.
 sememster: sp25 # set for the current seemester
 # TODO(template): We need to set this up.
@@ -172,6 +172,22 @@ theme: just-the-docs
 search_enabled: true
 heading_anchors: true
 permalink: pretty
+
+# External navigation links
+nav_external_links:
+  - title: Course Notes
+    url: https://ds100.org/course-notes/
+    hide_icon: true
+    aria_label: "Data 100 Course Notes" 
+    # opens_in_new_tab: true
+  - title: Debugging Guide
+    url: https://ds100.org/debugging-guide/
+    hide_icon: true
+    aria_label: "Data 100 Debugging Guide" 
+    # opens_in_new_tab: true
+  - title: Course FAQ
+    url: https://ds100.org/faqs/fa24/
+    hide_icon: true
 
 ## Footer Content.
 # You should probably not change these, but may add to footer_content if necessary.
