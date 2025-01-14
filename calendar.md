@@ -2,7 +2,7 @@
 layout: page
 title: Calendar
 description: Class schedule.
-nav_order: 2
+nav_order: 4
 ---
 
 # Calendar

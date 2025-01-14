@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Syllabus
-nav_order: 3
+nav_order: 2
 description: >-
     Principles and Techniques of Data Science
 markdown: kramdown
