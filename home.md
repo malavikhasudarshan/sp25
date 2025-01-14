@@ -24,7 +24,7 @@ UC Berkeley, Spring 2025
 [Office Hours Queue](https://oh.ds100.org/){:target="\_blank" .btn .btn-oh .mr-1}
 
 <div>
-{% assign instructors = site.staffers | where: 'role', 'Instructor' %| sort: 'order' %}
+{% assign instructors = site.staffers | where: 'role', 'Instructor' | sort: 'order' %}
   <div class="role">
     {% for staffer in instructors %}
     {{ staffer }}
