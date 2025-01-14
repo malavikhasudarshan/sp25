@@ -5,8 +5,6 @@ description: Class schedule.
 nav_order: 2
 ---
 
-# Weekly Calendar
+# Calendar
 
-{% for calendar in site.calendars %}
-  {{ calendar }}
-{% endfor %}
+This page will hold information regarding office hours, lectures, discussion sections, and special events.
