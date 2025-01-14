@@ -15,6 +15,7 @@ Jump to: [Instructors](#inst), [Lead Teaching Assistants](#leads), [UCS2s](#ucs2
 ## Course Staff Email
 Contact course staff via Ed with any questions or concerns. For sensitive matters, the staff email address [data100.instructors@berkeley.edu](mailto:data100.instructors@berkeley.edu) is monitored by the instructors and a few lead TAs.
 
+<a name = 'inst'></a>
 
 ## Instructors
 
@@ -22,6 +23,8 @@ Contact course staff via Ed with any questions or concerns. For sensitive matter
 {% for staffer in instructors %}
 {{ staffer }}
 {% endfor %}
+
+<a name = 'leads'></a>
 
 {% assign lead_ta = site.staffers | where: 'role', 'Lead TA' %}
 {% assign num_lead_tas = lead_ta | size %}
@@ -33,6 +36,8 @@ Contact course staff via Ed with any questions or concerns. For sensitive matter
 {% endfor %}
 {% endif %}
 
+<a name = 'ucs2s'></a>
+
 {% assign ucs2 = site.staffers | where: 'role', 'UCS2' %}
 {% assign num_ucs2 = ucs2 | size %}
 {% if num_ucs2 != 0 %}
@@ -42,6 +47,8 @@ Contact course staff via Ed with any questions or concerns. For sensitive matter
 {{ staffer }}
 {% endfor %}
 {% endif %}
+
+<a name = 'ucs1s'></a>
 
 {% assign ucs1 = site.staffers | where: 'role', 'UCS1' %}
 {% assign num_ucs1 = ucs1 | size %}
