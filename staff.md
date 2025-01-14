@@ -7,7 +7,14 @@ nav_order: 4
 
 # Staff
 
-Staff information is stored in the `_staffers` directory and rendered according to the layout file, `_layouts/staffer.html`.
+<!-- Staff information is stored in the `_staffers` directory and rendered according to the layout file, `_layouts/staffer.html`. -->
+
+Jump to: [Instructors](#inst), [Lead Teaching Assistants](#leads), [UCS2s](#ucs2s), [UCS1s](#ucs1s).
+
+
+## Course Staff Email
+Contact course staff via Ed with any questions or concerns. For sensitive matters, the staff email address [data100.instructors@berkeley.edu](mailto:data100.instructors@berkeley.edu) is monitored by the instructors and a few lead TAs.
+
 
 ## Instructors
 
@@ -16,42 +23,33 @@ Staff information is stored in the `_staffers` directory and rendered according 
 {{ staffer }}
 {% endfor %}
 
-{% assign head_teaching_assistants = site.staffers | where: 'role', 'Head Teaching Assistant' %}
-{% assign num_head_teaching_assistants = head_teaching_assistants | size %}
-{% if num_head_teaching_assistants != 0 %}
-## Head Teaching Assistants
+{% assign lead_ta = site.staffers | where: 'role', 'Lead TA' %}
+{% assign num_lead_tas = lead_ta | size %}
+{% if num_lead_tas != 0 %}
+## Lead Teaching Assistants
 
-{% for staffer in head_teaching_assistants %}
+{% for staffer in lead_ta %}
 {{ staffer }}
 {% endfor %}
 {% endif %}
 
-{% assign teaching_assistants = site.staffers | where: 'role', 'Teaching Assistant' %}
-{% assign num_teaching_assistants = teaching_assistants | size %}
-{% if num_teaching_assistants != 0 %}
-## Teaching Assistants
+{% assign ucs2 = site.staffers | where: 'role', 'UCS2' %}
+{% assign num_ucs2 = ucs2 | size %}
+{% if num_ucs2 != 0 %}
+## UCS2
 
-{% for staffer in teaching_assistants %}
+{% for staffer in ucs2 %}
 {{ staffer }}
 {% endfor %}
 {% endif %}
 
-{% assign tutors = site.staffers | where: 'role', 'Tutor' %}
-{% assign num_tutors = tutors | size %}
-{% if num_tutors != 0 %}
-## Tutors
+{% assign ucs1 = site.staffers | where: 'role', 'UCS1' %}
+{% assign num_ucs1 = ucs1 | size %}
+{% if num_ucs1 != 0 %}
+## UCS1
 
-{% for staffer in tutors %}
+{% for staffer in ucs1 %}
 {{ staffer }}
 {% endfor %}
 {% endif %}
 
-{% assign academic_interns = site.staffers | where: 'role', 'Academic Intern' %}
-{% assign num_academic_interns = academic_interns | size %}
-{% if num_academic_interns != 0 %}
-## Academic Interns
-
-{% for staffer in academic_interns %}
-{{ staffer }}
-{% endfor %}
-{% endif %}
