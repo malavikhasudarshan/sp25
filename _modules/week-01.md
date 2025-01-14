@@ -1,23 +1,14 @@
 ---
-title: Introduction to Java
+title: Week 1
 ---
 
-Sep 28
-: [Java & Git](#)
-  : [1.1](#)
+Jan 21
+: **Lecture 1**{: .label .label-lecture } [Introduction](lecture/lec01)    
+    : [Note 1](https://ds100.org/course-notes/intro_lec/introduction.html)
+: **Lecture Participation 1**{: .label .label-survey } [Lecture Participation 1](https://app.sli.do/event/anKVrRtoFqRMJ9n4vyttnm/embed/polls/70683480-966c-439b-989d-c4a061e17af7)
 
-Sep 29
-: **Section**{: .label .label-purple }[Intro to Java](#)
-  : [Solution](#)
 
-Sep 30
-: [Variables & Objects](#)
-  : [1.2](#), [2.1](#)
-
-Oct 1
-: **Lab**{: .label .label-purple } [Lab 1: Control and Functions]({% link _labs/lab01.md %})
-
-Oct 2
-: [Tracing, IntLists, & Recursion](#)
-  : [2.1](#)
-: **HW 1 due**{: .label .label-red } [HW 1: Recursion]({% link _hw/hw01.md %})
+Jan 23
+: **Lab 1**{: .label .label-lab } [Prerequisite Coding](https://data100.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FDS-100%2Ffa24-student&urlpath=lab%2Ftree%2Ffa24-student%2Flab%2Flab01%2Flab01.ipynb&branch=main)
+: **Homework 1A**{: .label .label-hw } [Plotting and the Permutation Test](https://data100.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2FDS-100%2Ffa24-student&urlpath=lab%2Ftree%2Ffa24-student%2Fhw%2Fhw01%2Fhw01.ipynb&branch=main)  
+: **Homework 1B**{: .label .label-hw } [Prerequisite Math](https://drive.google.com/file/d/1UzbllKmayZjJIP_NeJNAvWYnXCZonAdY/view?usp=sharing) 
