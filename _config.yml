@@ -54,7 +54,7 @@ aux_links:
   Ed:
     - 'https://edstem.org'
   OH Queue:
-    - 'https://oh.data8.org/'
+    - 'https://oh.ds100.org/'
 
 
 # TODO(template): These need to be documented
@@ -186,7 +186,7 @@ nav_external_links:
     aria_label: "Data 100 Debugging Guide" 
     # opens_in_new_tab: true
   - title: Course FAQ
-    url: https://ds100.org/faqs/fa24/
+    url: https://ds100.org/faqs/sp25/
     hide_icon: true
 
 ## Footer Content.
