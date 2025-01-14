@@ -1,7 +1,7 @@
 ---
 title: Styleguide
 permalink: /docs/styleguide/
-published: true
+published: false
 layout: page
 has_children: false
 parent: Documentation
