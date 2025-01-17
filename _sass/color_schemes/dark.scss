@@ -15,14 +15,15 @@ $base-button-color: $grey-dk-250;
 // $btn-primary-color: $blue-200;
 $code-background-color: #31343f; // OneDarkJekyll default for syntax-one-dark-vivid
 $code-linenumber-color: #dee2f7; // OneDarkJekyll .nf for syntax-one-dark-vivid
-$feedback-color: darken($sidebar-color, 3%);
+$feedback-color: color.adjust($sidebar-color, $lightness: -3%);
 $table-background-color: $grey-dk-250;
 $search-background-color: $grey-dk-250;
 $search-result-preview-color: $grey-dk-000;
 $border-color: $grey-dk-200;
 /////////////////// Add modifications below
 
-@import '../snytax_highliters/a11y-dark';
+@use "sass:color";
+@use '../syntax_highlighters/a11y-dark';
 
 // Override dark-mode variables here
 $berkeley-blue: #002676; // rgb(0, 38, 118);
@@ -31,10 +32,10 @@ $body-background-color: $grey-dk-400;
 $sidebar-color: $grey-dk-400;
 $search-background-color: $grey-dk-400;
 $body-text-color: $white;
-$body-lighter-color: darken($body-text-color, 20%);
+$body-lighter-color: color.adjust($body-text-color, $lightness: -20%);
 
 $link-color: #406FFE;
-$hover-focus-link-color: darken($link-color, 10%);
+$hover-focus-link-color: color.adjust($link-color, $lightness: -10%);
 
 // TODO(template): We need to figure out a much better solution!
 // This swaps the "dk" and "lt" variants from the original JTD files.

@@ -5,13 +5,14 @@
 // You would then add `@import "file"; to this file.
 
 // Just the Class customizations are all loaded in one file.
-@import '../just-the-class/just-the-class';
-@import '../berkeley/berkeley';
+@use "sass:meta";
+@use '../just-the-class/just-the-class';
+@use '../berkeley/berkeley';
 
-@import '../color_schemes/dark_overrides';
+@use '../color_schemes/dark_overrides';
 
 @if $color-scheme == dark {
-  @include dark-mode-overrides;
+  @include dark_overrides.dark-mode-overrides;
 }
 
 div.highlighter-rouge {
@@ -23,4 +24,4 @@ div.highlighter-rouge div.highlight {
 }
 
 // Place all of your course-specific CSS here.
-@import './course_overrides';
+@include meta.load-css('course_overrides');

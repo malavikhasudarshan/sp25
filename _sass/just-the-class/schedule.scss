@@ -1,5 +1,8 @@
+@use "sass:color";
+@use "card";
+
 .schedule {
-  @include abstract-card();
+  @include card.abstract-card();
   overflow-x: scroll;
   position: relative;
 
@@ -98,11 +101,11 @@
     }
 
     &.section {
-      background-color: darken($purple-000, 15%);
+      background-color: color.adjust($purple-000, $lightness: -15%);
     }
 
     &.office-hours {
-      background-color: darken($green-200, 10%);
+      background-color: color.adjust($green-200, $lightness: -10%);
     }
   }
 }

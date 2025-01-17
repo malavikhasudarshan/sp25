@@ -1,3 +1,4 @@
+@use "sass:color";
 // Common Berkeley Variables.
 // This file is explicitly included before berkeley.scss in setup.scss
 // Some colors may be override by berkeley_light or berkeley_dark
@@ -15,7 +16,7 @@ $berkeley-blue: #002676; // rgb(0, 38, 118);
 
 // Colors
 $link-color: $berkeley-blue;
-$hover-focus-link-color: lighten($link-color, 20%);
+$hover-focus-link-color: color.adjust($link-color, $lightness: 20%);
 
 // Layout
 $gutter-spacing: $sp-6;
